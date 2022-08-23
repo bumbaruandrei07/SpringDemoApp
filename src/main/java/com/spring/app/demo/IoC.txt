@@ -1,0 +1,11 @@
+IoC contine un container de Inversion of Control
+IoC presupune mutarea instantierii dependintelor in afara clasei
+Toate instantele vor fi create de catre container-ul de IoC
+
+Service Layer = strat, zona din arhitectura aplicatiei care contine logica de business, ceea ce face
+
+Data Layer <-> Service Layer <-> Controller <- Client
+
+Service Layer -> locul in care definim validari
+Data Layer = repository
+Controller-ul nu trebuie sa ajunga in data layer, ci trebuie sa fie delegata in Service Layer
