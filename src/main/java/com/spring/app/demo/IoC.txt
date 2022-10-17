@@ -8,4 +8,8 @@ Data Layer <-> Service Layer <-> Controller <- Client
 
 Service Layer -> locul in care definim validari
 Data Layer = repository
-Controller-ul nu trebuie sa ajunga in data layer, ci trebuie sa fie delegata in Service Layer
+Controller-ul nu trebuie sa ajunga in data layer, ci trebuie sa fie delegata in Service Layer, partea de citire trebuie sa fie delegata in Service Layer
+
+POSTMAN - BODY - selectam raw si alegem tipul JSON
+incepem cu {   }
+Campurile din JSON trebuie sa se mapeze pe atributele clasei

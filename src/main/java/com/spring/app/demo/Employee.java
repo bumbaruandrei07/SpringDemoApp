@@ -10,6 +10,7 @@ package com.spring.app.demo;
 
 //pentru a transforma clasa intr-o tabela trebuie sa adaugam 2 adnotari, @entity si @table (numele pe care il va avea tabela generata in baza de date)
 //automat ni se va sugera sa adaugam un id
+
 import javax.persistence.*;
 
 @Entity
@@ -27,22 +28,20 @@ public class Employee {
             generator = "employee_sequence",
             strategy = GenerationType.SEQUENCE
     )
+
     private Long id; //Long pentru ca intr-o aplicatie reala ajung la numere destul de mari
     private String firstName;
-
-
     private String lastName;
     private int age;
     private String emailAddress;
     private String address;
     private String role;
 
-
-    public Employee(){
+    public Employee() {
 
     }
 
-    public Employee(String firstName, String lastName, int age, String emailAddress, String address, String role){
+    public Employee(String firstName, String lastName, int age, String emailAddress, String address, String role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -50,10 +49,12 @@ public class Employee {
         this.address = address;
         this.role = role;
     }
-    public String getFirstName(){
+
+    public String getFirstName() {
         return firstName;
     }
-    public void setFirstName(String firstName){
+
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
